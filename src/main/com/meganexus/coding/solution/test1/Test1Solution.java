@@ -15,7 +15,7 @@ public class Test1Solution {
 
     public void process(String type) {
 
-        behaviour = BehaviourFactory.valueOf(type).getBehaviour();
+        behaviour = BehaviourFactory.getBehaviour(type);
 
         behaviour.doSomething();
     }

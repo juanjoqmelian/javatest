@@ -45,5 +45,14 @@ public enum BehaviourFactory {
         }
     };
 
+    private BehaviourFactory() {
+
+    }
+
     public abstract Behaviour getBehaviour();
+
+    public static Behaviour getBehaviour(String type) {
+
+        return BehaviourFactory.valueOf(type).getBehaviour();
+    }
 }
