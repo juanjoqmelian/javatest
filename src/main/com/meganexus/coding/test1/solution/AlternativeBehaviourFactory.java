@@ -1,4 +1,4 @@
-package com.meganexus.coding.solution.test1;
+package com.meganexus.coding.test1.solution;
 
 
 import java.util.HashMap;

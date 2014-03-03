@@ -1,4 +1,4 @@
-package com.meganexus.coding;
+package com.meganexus.coding.test1;
 
 public class Main {
 
