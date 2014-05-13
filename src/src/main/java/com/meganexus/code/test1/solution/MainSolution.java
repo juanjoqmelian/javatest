@@ -7,7 +7,7 @@ public class MainSolution {
 
     public static void main(String[] args) {
 
-        NumberProcessorSolution test1 = new NumberProcessorSolution();
+        ConsoleOutput consoleOutput = new ConsoleOutput();
 
         List<String> types = new ArrayList<String>();
 
@@ -18,7 +18,7 @@ public class MainSolution {
         types.add("FIVE");
         types.add("SIX");
 
-        test1.printAll(types);
+        consoleOutput.printAll(types);
     }
 
 }
