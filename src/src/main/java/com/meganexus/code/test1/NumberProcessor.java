@@ -20,7 +20,7 @@ public class NumberProcessor {
 
     public void printAll() {
 
-        for(String type : getTypes()) {
+        for (String type : getTypes()) {
 
             String message = this.process(type);
 
@@ -30,22 +30,22 @@ public class NumberProcessor {
 
     public String process(String type) {
 
-        if(type.equals("ONE")) {
+        if (type.equals("ONE")) {
 
             return doSomethingOne();
-        }else if (type.equals("TWO")) {
+        } else if (type.equals("TWO")) {
 
             return doSomethingTwo();
-        }else if(type.equals("THREE")) {
+        } else if(type.equals("THREE")) {
 
             return doSomethingThree();
-        }else if(type.equals("FOUR")) {
+        } else if(type.equals("FOUR")) {
 
             return doSomethingFour();
-        }else if(type.equals("FIVE")) {
+        } else if(type.equals("FIVE")) {
 
             return doSomethingFive();
-        }else if(type.equals("SIX")) {
+        } else if(type.equals("SIX")) {
 
             return doSomethingSix();
         }
