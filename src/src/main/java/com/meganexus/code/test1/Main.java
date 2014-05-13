@@ -6,7 +6,7 @@ public class Main {
 
         NumberProcessor test1 = new NumberProcessor();
 
-        test1.processAll();
+        test1.printAll();
     }
 
 }

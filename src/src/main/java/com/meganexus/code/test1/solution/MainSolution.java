@@ -18,7 +18,7 @@ public class MainSolution {
         types.add("FIVE");
         types.add("SIX");
 
-        test1.processAll(types);
+        test1.printAll(types);
     }
 
 }

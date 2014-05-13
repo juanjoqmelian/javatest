@@ -6,10 +6,10 @@ public class TypeThreeBehaviour implements Behaviour{
     @Override
     public String doSomething() {
 
-        return doSometingThree();
+        return doSomethingThree();
     }
 
-    private String doSometingThree() {
+    private String doSomethingThree() {
 
         return "I'm type Three!";
     }

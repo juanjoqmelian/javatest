@@ -18,7 +18,7 @@ public class NumberProcessor {
     }
 
 
-    public void processAll() {
+    public void printAll() {
 
         for(String type : getTypes()) {
 

@@ -17,6 +17,7 @@ public class MainTest {
     @Rule
     public final StandardOutputStreamLog output = new StandardOutputStreamLog();
 
+
     @Test
     public void main_shouldPrintAllMessages() throws Exception {
 

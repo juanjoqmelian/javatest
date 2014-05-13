@@ -6,7 +6,8 @@ public class NumberProcessorSolution {
 
     private Behaviour behaviour;
 
-    public void processAll(List<String> types) {
+
+    public void printAll(List<String> types) {
 
         for(String type : types) {
             System.out.println(this.process(type));

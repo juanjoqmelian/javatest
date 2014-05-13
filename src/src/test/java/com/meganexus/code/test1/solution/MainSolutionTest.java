@@ -17,15 +17,16 @@ public class MainSolutionTest {
     @Rule
     public final StandardOutputStreamLog output = new StandardOutputStreamLog();
 
+
     @Test
     public void main_shouldPrintAllMessages() throws Exception {
 
         String expectedOutput = "I'm type One!\r\n" +
-                "I'm type Two!\r\n" +
-                "I'm type Three!\r\n" +
-                "I'm type Four!\r\n" +
-                "I'm type Five!\r\n" +
-                "I'm type Six!\r\n";
+                                "I'm type Two!\r\n" +
+                                "I'm type Three!\r\n" +
+                                "I'm type Four!\r\n" +
+                                "I'm type Five!\r\n" +
+                                "I'm type Six!\r\n";
 
         MainSolution.main(null);
         assertThat(output.getLog(), is(expectedOutput));
