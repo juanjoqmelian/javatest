@@ -25,7 +25,6 @@ public class EmailSenderTest {
     @ClassRule
     public static final SmtpServerRule smtpServerRule = new SmtpServerRule(emailSender.getSmtpServer());
 
-
     @Rule
     public final StandardOutputStreamLog output = new StandardOutputStreamLog();
 
@@ -53,7 +52,7 @@ public class EmailSenderTest {
     public void send_shouldThrowIllegalArgumentExceptionWithSpecificErrorMessage() throws SmtpServerNotStarted {
 
         expectedException.expect(IllegalArgumentException.class);
-        expectedException.expectMessage("");
+        expectedException.expectMessage("You must introduce an addressee!");
 
         emailSender.send("", "This is a failing test!");
     }
