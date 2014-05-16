@@ -1,10 +1,11 @@
 package com.meganexus.code.test1;
 
+import com.meganexus.code.test1.solution.MainSolution;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.contrib.java.lang.system.StandardOutputStreamLog;
 
-import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.CoreMatchers.containsString;
 import static org.junit.Assert.assertThat;
 
 /**
@@ -21,14 +22,20 @@ public class MainTest {
     @Test
     public void main_shouldPrintAllMessages() throws Exception {
 
-        String expectedOutput = "I'm type One!\r\n" +
-                                "I'm type Two!\r\n" +
-                                "I'm type Three!\r\n" +
-                                "I'm type Four!\r\n" +
-                                "I'm type Five!\r\n" +
-                                "I'm type Six!\r\n";
+        String messageOne = "I'm type One!";
+        String messageTwo = "I'm type Two!";
+        String messageThree = "I'm type Three!";
+        String messageFour = "I'm type Four!";
+        String messageFive = "I'm type Five!";
+        String messageSix = "I'm type Six!";
 
-        Main.main(null);
-        assertThat(output.getLog(), is(expectedOutput));
+        MainSolution.main(null);
+
+        assertThat(output.getLog(), containsString(messageOne));
+        assertThat(output.getLog(), containsString(messageTwo));
+        assertThat(output.getLog(), containsString(messageThree));
+        assertThat(output.getLog(), containsString(messageFour));
+        assertThat(output.getLog(), containsString(messageFive));
+        assertThat(output.getLog(), containsString(messageSix));
     }
 }
