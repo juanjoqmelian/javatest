@@ -8,7 +8,7 @@ import com.meganexus.code.test2.Nationality;
 public class DefaultEmployeeService implements EmployeeService {
 
 
-    private final EmployeeRepository employeeRepository = new EmployeeRepository();
+    private EmployeeRepository employeeRepository = new EmployeeRepository();
 
 
     @Override
@@ -26,13 +26,13 @@ public class DefaultEmployeeService implements EmployeeService {
 
 
     @Override
-    public int getEmployeesWhoseNationalityIs(Nationality nationality) {
+    public int getNumberOfEmployeesWhoseNationalityIs(Nationality nationality) {
 
         int numberOfEmployees = 0;
 
         for (Employee employee : employeeRepository.getEmployees()) {
 
-            if(nationalityMatches(nationality, employee)) {
+            if (nationalityMatches(nationality, employee)) {
 
                 numberOfEmployees++;
             }
@@ -45,5 +45,11 @@ public class DefaultEmployeeService implements EmployeeService {
     private boolean nationalityMatches(Nationality nationality, Employee employee) {
 
         return employee.getNationality().equals(nationality);
+    }
+
+
+
+    public void setEmployeeRepository(EmployeeRepository employeeRepository) {
+        this.employeeRepository = employeeRepository;
     }
 }

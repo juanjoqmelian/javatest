@@ -7,5 +7,6 @@ public enum Nationality {
     FRENCH,
     SPANISH,
     ITALIAN,
-    GREEK;
+    GREEK,
+    AMERICAN;
 }

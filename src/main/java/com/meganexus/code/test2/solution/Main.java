@@ -12,6 +12,6 @@ public class Main {
 
         System.out.println("Amount expended on salaries: " + employeeService.calculateExpensesOnSalaries());
 
-        System.out.println("The number of employees from Spain is: " + employeeService.getEmployeesWhoseNationalityIs(Nationality.SPANISH));
+        System.out.println("The number of employees from Spain is: " + employeeService.getNumberOfEmployeesWhoseNationalityIs(Nationality.SPANISH));
     }
 }

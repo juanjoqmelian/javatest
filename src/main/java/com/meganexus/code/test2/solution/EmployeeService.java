@@ -7,5 +7,5 @@ public interface EmployeeService {
 
     Float calculateExpensesOnSalaries();
 
-    int getEmployeesWhoseNationalityIs(Nationality nationality);
+    int getNumberOfEmployeesWhoseNationalityIs(Nationality nationality);
 }
